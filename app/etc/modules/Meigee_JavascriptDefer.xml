@@ -1,0 +1,15 @@
+<!--
+/**
+ *
+ * @package    Javascript Defer
+ * @copyright   Copyright (c) 2010-2015 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+-->
+<config>
+    <modules>
+        <Meigee_JavascriptDefer>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Meigee_JavascriptDefer>
+    </modules>
+</config>

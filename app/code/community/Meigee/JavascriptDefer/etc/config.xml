@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @package    Javascript Defer
+ * @copyright   Copyright (c) 2010-2015 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+-->
+<config>
+    <modules>
+        <Meigee_JavascriptDefer>
+            <version>0.0.1</version>
+        </Meigee_JavascriptDefer>
+    </modules>
+     <global>
+        <helpers>
+            <JavascriptDefer>
+                <class>Meigee_JavascriptDefer_Helper</class>
+            </JavascriptDefer>
+        </helpers>
+         <models>
+             <javascriptDefer>
+                 <class>Meigee_JavascriptDefer_Model</class>
+             </javascriptDefer>
+         </models>
+     </global>
+    <frontend>
+        <events>
+            <http_response_send_before>
+                <observers>
+                    <javascriptDefer>
+                        <type>singleton</type>
+                        <class>javascriptDefer/observer_html</class>
+                        <method>replaceJs</method>
+                    </javascriptDefer>
+                </observers>
+            </http_response_send_before>
+        </events>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <meigee>
+                                            <title>General Optmization</title>
+                                        </meigee>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <meigee>
+            <js>
+                <enable_javascriptDefer>0</enable_javascriptDefer>
+                <enable_javascriptDefer_external_sources>1</enable_javascriptDefer_external_sources>
+            </js>
+        </meigee>
+    </default>
+</config>
