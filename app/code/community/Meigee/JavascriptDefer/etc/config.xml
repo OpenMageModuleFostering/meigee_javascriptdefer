@@ -2,14 +2,26 @@
 <!--
 /**
  *
- * @package    Javascript Defer
- * @copyright   Copyright (c) 2010-2015 MeigeeTeam. (http://www.meigeeteam.com)
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    Meigee
+ * @package     Meigee_JavascriptDefer
+ * @copyright   Copyright (c) 2015 Meigee Sp.Z.o.o (https://www.meigeeteam.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
 <config>
     <modules>
         <Meigee_JavascriptDefer>
-            <version>0.0.1</version>
+            <version>1.0.1</version>
         </Meigee_JavascriptDefer>
     </modules>
      <global>
@@ -47,7 +59,7 @@
                                 <config>
                                     <children>
                                         <meigee>
-                                            <title>General Optmization</title>
+                                            <title>Javascript Defer</title>
                                         </meigee>
                                     </children>
                                 </config>

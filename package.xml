@@ -1,22 +1,29 @@
 <?xml version="1.0"?>
 <package>
     <name>Meigee_JavascriptDefer</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
     <channel>community</channel>
     <extends/>
     <summary>Javascript Defer Extension allows defer parsing of JavaScript that increases performance of your store.</summary>
-    <description>Defer parsing of JavaScript&#xD;
-Speeds up the store loading&#xD;
-Reduces the server loading&#xD;
-Increases rating of your store in GTmetrix&#xD;
-Easy configuration</description>
-    <notes>Version 1.0 of the extension.</notes>
+    <description>By default in Magento all JavaScript files are placed in html &lt;head&gt; tag, that means your visitors see a blank page while JavaScript loads. It's ok if you use default Magento theme, but all custom themes have lot's of additional JavaScript that increases loading time dramatically.&#xD;
+&#xD;
+Javascript Defer Extension parses all of your JavaScript and places it at the bottom right before closing &lt;body&gt; tag to reduce blocking of page rendering and avoid users seeing a blank page while JavaScript loads. That increases performance of your store. &#xD;
+&#xD;
+You don't need to customize any code in template files, the extension does that automatically before magento core render html code.&#xD;
+&#xD;
+Features&#xD;
+* Defer parsing of JavaScript&#xD;
+* Speeds up the store loading&#xD;
+* Reduces the server loading&#xD;
+* Increases rating of your store in GTmetrix&#xD;
+* Easy configuration</description>
+    <notes>Initial release</notes>
     <authors><author><name>Meigee Sp.Z.o.o</name><user>Meigee</user><email>nick@meigeeteam.com</email></author></authors>
-    <date>2015-11-05</date>
-    <time>11:32:01</time>
-    <contents><target name="magecommunity"><dir name="Meigee"><dir name="JavascriptDefer"><dir name="Helper"><file name="Data.php" hash="c2f775ad646d7746ab1b5fc532c7376b"/></dir><dir name="Model"><dir name="Observer"><file name="Html.php" hash="d6a12a8136769bc3cd2a517a1156eef1"/></dir></dir><dir name="etc"><file name="config.xml" hash="4c49fe0eee6c6bbce9866d406bf4f208"/><file name="system.xml" hash="a71dc4c752b1cbab45d90e3268bf53e4"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Meigee_JavascriptDefer.xml" hash="2b5eadeb34055dd90936edd3a7f9a705"/></dir></target></contents>
+    <date>2015-11-06</date>
+    <time>10:55:17</time>
+    <contents><target name="magecommunity"><dir name="Meigee"><dir name="JavascriptDefer"><dir name="Helper"><file name="Data.php" hash="60043a761d85238f76b6c2862b2b18ed"/></dir><dir name="Model"><dir name="Observer"><file name="Html.php" hash="24e9a0d5b1deb4ff6c518bb3274fe8d4"/></dir></dir><dir name="etc"><file name="config.xml" hash="3e921cf15defadd7d6885cbe0a52cef8"/><file name="system.xml" hash="a40adabd4d49f4cdb28b3089515d3b9e"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Meigee_JavascriptDefer.xml" hash="f351323a98261e09c2d9a1a3785cfcf7"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.4.0</min><max>5.5.9</max></php></required></dependencies>
 </package>
