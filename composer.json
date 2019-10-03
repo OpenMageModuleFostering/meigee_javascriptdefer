@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Meigee_JavascriptDefer",
+    "name": "openmage-module-fostering\/meigee_javascriptdefer",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Javascript Defer Extension allows defer parsing of JavaScript that increases performance of your store.",
     "authors": [
